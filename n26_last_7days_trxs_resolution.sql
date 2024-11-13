@@ -8,4 +8,4 @@
         ON t1.user_id = t2.user_id
         AND t2.date BETWEEN DATE(t1.date, '-6 days') AND t1.date
     GROUP BY t1.transaction_id, t1.user_id, t1.date
-    ORDER BY t1.date DESC, t1.user_id
+    ORDER BY t1.date ASC, t1.user_id
